@@ -135,10 +135,10 @@ class BackgroundWorker(
         }
 
         // If stopEngine is called from `onStopped`, it may not be from the main thread.
-        Handler(Looper.getMainLooper()).post {
-            engine?.destroy()
-            engine = null
-        }
+        // Handler(Looper.getMainLooper()).post {
+        //     engine?.destroy()
+        //     engine = null
+        // }
     }
 
     override fun onMethodCall(
