@@ -111,7 +111,7 @@ class BackgroundWorker(
     }
 
     override fun onStopped() {
-        stopEngine(null)
+        // stopEngine(null)
     }
 
     private fun stopEngine(result: Result?) {
